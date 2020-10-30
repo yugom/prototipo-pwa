@@ -1,8 +1,8 @@
 import React from 'react';
 import {ButtonStyled} from './button.styled';
 
-export const Button = () => {
+export const Button = (props) => {
     return(
-        <ButtonStyled>teste</ButtonStyled>
+        <ButtonStyled buttonKind={props.kind}>{props.text}</ButtonStyled>
     );
 }
