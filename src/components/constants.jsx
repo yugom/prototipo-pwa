@@ -20,7 +20,9 @@ export const FontSize = {
 
 export const Color = {
     Primary: '#0595A6',
-    Secondary: '#EC8213'
+    Secondary: '#EC8213',
+    White: '#fff',
+    Black: '#000',
 }
 
 export const Padding = {
@@ -39,4 +41,3 @@ export const Border =  {
 }
 
 export const ButtonHeight = '44px';
-export const ButtonSpinnerIcon = '32px';

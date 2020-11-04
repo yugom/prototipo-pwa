@@ -12,7 +12,7 @@ export const Button = (props) => {
             outline={props.outline}
         >
             <ButtonContent loading={props.loading}>
-                {props.text}
+                {props.children}
             </ButtonContent>
             <SpinnerStyled loading={props.loading}>
                 <Spinner img={IconPath}/>

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import {ButtonSpinnerIcon} from '../constants'
+
+const SpinnerIconSize = '32px';
 
 export const Spinner = styled.div`
     background-image: url(${props => props.img});
-    height: ${ButtonSpinnerIcon};
-    width: ${ButtonSpinnerIcon};
+    height: ${SpinnerIconSize};
+    width: ${SpinnerIconSize};
     animation: loading-icon-spin infinite 3s linear;
 
     @keyframes loading-icon-spin {
