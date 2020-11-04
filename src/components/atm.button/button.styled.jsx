@@ -7,7 +7,7 @@ const buttonColor = {
 }
 
 export const ButtonStyled = styled.button`
-    width: ${props => props.expansible ? `100%` : `auto` };
+    width: ${props => props.expanded ? `100%` : `auto` };
     padding: 0 ${Padding.Medium};
     line-height: calc(${ButtonHeight});
     height: ${ButtonHeight};

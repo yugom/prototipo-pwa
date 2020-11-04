@@ -8,7 +8,7 @@ export const Button = (props) => {
         <ButtonStyled 
             buttonKind={props.kind}
             disabled={props.disabled}
-            expansible={props.expansible}
+            expanded={props.expanded}
             outline={props.outline}
         >
             <ButtonContent loading={props.loading}>
