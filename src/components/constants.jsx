@@ -39,3 +39,4 @@ export const Border =  {
 }
 
 export const ButtonHeight = '44px';
+export const ButtonSpinnerIcon = '32px';

@@ -1,5 +1,7 @@
 import React from 'react';
-import {ButtonStyled} from './button.styled';
+import {ButtonContent, ButtonStyled, SpinnerStyled} from './button.styled';
+import {Spinner} from '../atm.spinner/spinner.styled';
+import IconPath from '../../images/ic_loading.svg';
 
 export const Button = (props) => {
     return(
@@ -9,7 +11,12 @@ export const Button = (props) => {
             expansible={props.expansible}
             outline={props.outline}
         >
-            {props.text}
+            <ButtonContent loading={props.loading}>
+                {props.text}
+            </ButtonContent>
+            <SpinnerStyled loading={props.loading}>
+                <Spinner img={IconPath}/>
+            </SpinnerStyled>
         </ButtonStyled>
     );
 }
