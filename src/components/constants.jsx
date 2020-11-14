@@ -25,7 +25,7 @@ export const Color = {
     Black: '#000',
 }
 
-export const Padding = {
+export const Spacing = {
     XXSmall: '1px',
     XSmall: '4px',
     Small: '8px',
@@ -41,3 +41,18 @@ export const Border =  {
 }
 
 export const ButtonHeight = '44px';
+
+export const HeaderHeight = {
+    Large: '64px',
+    Medium: '56px;',
+    Small: '48px'
+}
+
+export const IconSize = {
+    XSmall: '16px',
+    Small: '24px',
+    Medium: '28px',
+    Large: '32px',
+    XLarge: '56px',
+    XXLarge: '60px',
+  }
