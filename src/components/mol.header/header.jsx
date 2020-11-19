@@ -9,13 +9,13 @@ export const Header = (props) => {
     return(
         <HeaderStyled height={'medium'}>
             <HBox grow={true}>
-                <HBox.Item grow={true} halign={'flexStart'} >
+                <HBox.Item grow={true} hAlign={'flexStart'} >
                     <Icon.Menu size={IconSize.Large}/>
                 </HBox.Item>
                 <HBox.Item halign={'center'}>
                     <AppIcon.Logo/>
                 </HBox.Item>
-                <HBox.Item grow={true} halign={'flexEnd'}>
+                <HBox.Item grow={true} hAlign={'flexEnd'}>
                     <Icon.Cart size={IconSize.Large}/>
                     <HBox.Separator />
                     <Icon.Cart size={IconSize.Large}/>

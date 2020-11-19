@@ -22,8 +22,8 @@ const VAlign = {
 export const HBox = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: ${props => props.halign ? HAlign[props.halign] : 'center'};
-    align-items: ${props => props.valign ? VAlign[props.valign] : 'center'};
+    justify-content: ${props => HAlign[props.hAlign] ?? 'center'};
+    align-items: ${props => VAlign[props.vAlign] ?? 'center'};
     height: 100%;
     width: ${props => props.grow ? '100%' : 'auto'};
 `;
@@ -31,7 +31,7 @@ export const HBox = styled.div`
 HBox.Item = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: ${props => props.halign ? HAlign[props.halign] : 'center'};
+    justify-content: ${props => HAlign[props.hAlign] ?? 'center'};
     flex: ${props => props.grow ? '1': '0'};
     height: 100%;
 `
