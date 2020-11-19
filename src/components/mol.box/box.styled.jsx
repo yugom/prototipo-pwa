@@ -32,6 +32,7 @@ HBox.Item = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: ${props => HAlign[props.hAlign] ?? 'center'};
+    align-items: ${props => VAlign[props.vAlign] ?? 'center'};
     flex: ${props => props.grow ? '1': '0'};
     height: 100%;
 `

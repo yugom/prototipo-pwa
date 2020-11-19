@@ -53,6 +53,6 @@ export const IconSize = {
     Small: '24px',
     Medium: '28px',
     Large: '32px',
-    XLarge: '56px',
+    XLarge: '48px',
     XXLarge: '60px',
   }
