@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const MenuStyled = styled.div`
     height: 100vh;
-    background-color: red;
     display: flex;
+    transform: ${props => props.opened ? 'translateX(0)' : 'translateX(-100%)'};
+    transition: all .4s ease-in-out;
 `
 
 export const NavContainer = styled.div`
