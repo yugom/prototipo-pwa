@@ -5,7 +5,7 @@ export const FontFamily = {
 export const FontWeight = {
     Normal: 'normal',
     Bold: 'bold',
-    Medium: 500,
+    Medium: 600,
     Lighter: 300
 }
 

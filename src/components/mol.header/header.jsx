@@ -40,7 +40,7 @@ export const HeaderNav = props => {
                 </HBox.Item>
                 <HBox.Separator />
                 <HBox.Item grow={true} hAlign={'flexStart'}>
-                    <H1>Olá, {props.children}</H1>
+                    <H1 color={'white'}>Olá, {props.children}</H1>
                 </HBox.Item>
                 <HBox.Item onClick={props.handleCloseClick}>
                     <Icon.Close size={IconSize.Large} />
