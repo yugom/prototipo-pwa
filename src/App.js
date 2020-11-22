@@ -4,9 +4,15 @@ import { Menu } from './components/mol.menu/menu';
 import { Header } from './components/mol.header/header'
 import { Home } from './pages/home'
 import { About } from './pages/about'
+import { Login } from './pages/login'
 
 export function App() {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const [login, setLogin] = useState(false);
+
+  const handleLoginClick = () => {
+    setLogin(true);
+  }
 
   const openMenu = () => {
     setToggleMenu(!toggleMenu)
@@ -14,11 +20,11 @@ export function App() {
 
   return (
     <div className="App" >
-      <Header handleMenuClick={openMenu} />
+      {login && <Header handleMenuClick={openMenu} />}
       <Router>
-        <Menu opened={toggleMenu} handleClick={openMenu}></Menu>
+        <Menu opened={toggleMenu} handleClick={openMenu}/>
         <Switch>
-          <Route path={'/'} exact component={Home} />
+          <Route path={'/'} exact component={login ? Home : () => <Login handleClick={handleLoginClick} />} />
           <Route path={'/about'} component={About} />
         </Switch>
       </Router>
