@@ -2,14 +2,13 @@ import styled from 'styled-components'
 import {Color} from '../constants'
 
 export const MenuStyled = styled.div`
-    height: 100vh;
-    position: relative;
 `
 
 export const NavContainer = styled.div`
-    height: 100%;
+    height: 100vh;
     width: 80%;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 10;
     background-color: ${Color.White};
     transform: ${props => props.opened ? 'translateX(0)' : 'translateX(-100%)'};

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from './components/mol.menu/menu';
+import { Header } from './components/mol.header/header'
 
 export function App() {
   const [MenuOpened, setMenuOpened] = useState(false)
@@ -10,7 +11,7 @@ export function App() {
 
   return (
     <div className="App" style={{backgroundColor: 'red'}}>
-      <button onClick={openMenu}>Menu</button>
+      <Header handleMenuClick={openMenu}/>
       <Menu opened={MenuOpened} handleClick={openMenu}></Menu>
     </div>
   );

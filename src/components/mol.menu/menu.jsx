@@ -6,7 +6,7 @@ export const Menu = props => {
     return(
         <MenuStyled>
             <NavContainer opened={props.opened}>
-                <HeaderNav children={'Pedro'}/> 
+                <HeaderNav children={'Pedro'} handleCloseClick={props.handleClick}/> 
             </NavContainer>
             <Overlay opened={props.opened} onClick={props.handleClick}/>
         </MenuStyled>
