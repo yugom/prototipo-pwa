@@ -1,7 +1,7 @@
 import React from 'react';
 import {ButtonContent, ButtonStyled, SpinnerStyled} from './button.styled';
 import {Spinner} from '../atm.spinner/spinner.styled';
-import IconPath from '../../images/ic_loading.svg';
+import IconPath from '../../icons/ic_loading.svg';
 
 export const Button = (props) => {
     return(
