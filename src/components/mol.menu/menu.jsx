@@ -4,11 +4,11 @@ import {HeaderNav} from '../mol.header/header';
 
 export const Menu = props => {
     return(
-        <MenuStyled opened={props.opened}>
-            <NavContainer>
+        <MenuStyled>
+            <NavContainer opened={props.opened}>
                 <HeaderNav children={'Pedro'}/> 
             </NavContainer>
-            <Overlay onClick={props.teste}/>
+            <Overlay opened={props.opened} onClick={props.handleClick}/>
         </MenuStyled>
     );
 }
