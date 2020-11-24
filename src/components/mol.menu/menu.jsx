@@ -1,14 +1,14 @@
 import React from 'react'
-import { MenuStyled, NavContainer, Overlay } from './menu.styled';
-import {HeaderNav} from '../mol.header/header';
+import { NavContainer, Overlay } from './menu.styled';
+import { HeaderNav } from '../mol.header/header';
 
 export const Menu = props => {
-    return(
-        <MenuStyled>
+    return (
+        <>
             <NavContainer opened={props.opened}>
-                <HeaderNav children={'Pedro'} handleCloseClick={props.handleClick}/> 
+                <HeaderNav children={'Pedro'} handleCloseClick={props.handleClick} />
             </NavContainer>
-            <Overlay opened={props.opened} onClick={props.handleClick}/>
-        </MenuStyled>
+            <Overlay opened={props.opened} onClick={props.handleClick} />
+        </>
     );
 }

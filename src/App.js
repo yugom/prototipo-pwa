@@ -3,17 +3,16 @@ import { Menu } from './components/mol.menu/menu';
 import { Header } from './components/mol.header/header'
 
 export function App() {
-  const [MenuOpened, setMenuOpened] = useState(false)
-  
+  const [toggleMenu, setToggleMenu] = useState(false)
+
   const openMenu = () => {
-    setMenuOpened(!MenuOpened)
+    setToggleMenu(!toggleMenu)
   }
 
   return (
-    <div className="App" style={{backgroundColor: 'red'}}>
-      <Header handleMenuClick={openMenu}/>
-      <Menu opened={MenuOpened} handleClick={openMenu}></Menu>
+    <div className="App" style={{ backgroundColor: 'red' }}>
+      <Header handleMenuClick={openMenu} />
+      <Menu opened={toggleMenu} handleClick={openMenu}></Menu>
     </div>
   );
 }
-  
