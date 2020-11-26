@@ -1,8 +1,9 @@
 import React from 'react';
-import {H1} from '../components/atm.typography/typography.styled'
+import { H1 } from '../components/atm.typography/typography.styled'
+
 
 export const Home = () => {
-    return(
+    return (
         <div>
             <H1>Home</H1>
         </div>
