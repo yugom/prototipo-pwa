@@ -6,7 +6,8 @@ export const FontWeight = {
     Normal: 'normal',
     Bold: 'bold',
     Medium: 600,
-    Lighter: 300
+    Light: 400,
+    XLight: 300
 }
 
 export const FontSize = {
@@ -23,6 +24,11 @@ export const Color = {
     Secondary: '#EC8213',
     White: '#fff',
     Black: '#000',
+    GrayXLight: '#F5F5F5',
+    GrayLight: '#E2E2E2',
+    Gray: '#BDBDBD',
+    GrayDark: '#757575',
+    GrayXDark: '#525252',
 }
 
 export const Spacing = {
@@ -34,13 +40,18 @@ export const Spacing = {
     XLarge: '32px',
 }
 
-export const Border =  {
+export const Border = {
     Radius: '6px',
     Thickness: '1px',
-    Type: 'solid' 
+    Type: 'solid'
 }
 
-export const ButtonHeight = '44px';
+export const ButtonHeight = {
+    Medium: '48px',
+    Small: '40px'
+}
+
+export const FieldHeight = '48px';
 
 export const HeaderHeight = {
     Large: '64px',
@@ -55,4 +66,4 @@ export const IconSize = {
     Large: '32px',
     XLarge: '48px',
     XXLarge: '60px',
-  }
+}

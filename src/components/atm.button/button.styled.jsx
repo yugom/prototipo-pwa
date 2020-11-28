@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {FontFamily, FontWeight, FontSize, Color, Border, Spacing, ButtonHeight} from '../constants'
+import { FontFamily, FontWeight, FontSize, Color, Border, Spacing, ButtonHeight } from '../constants'
 
 const buttonColor = {
     primary: Color.Primary,
@@ -8,10 +8,12 @@ const buttonColor = {
 
 export const ButtonStyled = styled.button`
     position: relative;
-    width: ${props => props.expanded ? `100%` : `auto` };
+    width: ${props => props.expanded ? `100%` : `auto`};
     padding: 0 ${Spacing.Medium};
-    height: ${ButtonHeight};
+    height: ${ButtonHeight.Medium};
     border-radius: ${Border.Radius};
+    border-top-left-radius: ${props => props.flatBorder ? '0' : Border.Radius};
+    border-bottom-left-radius: ${props => props.flatBorder ? '0' : Border.Radius};
     border: ${Border.Thickness} ${Border.Type} ${props => props.outline ? buttonColor[props.buttonKind] : 'transparent'};
     color: ${props => props.outline ? buttonColor[props.buttonKind] : Color.White};
     background-color: ${props => props.outline ? 'transparent' : props.buttonKind ? buttonColor[props.buttonKind] : buttonColor.primary};
