@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Border, Color, FieldHeight, FontSize, FontWeight } from '../constants';
+import { Border, Color, FieldHeight, FontSize, FontWeight, Spacing } from '../constants';
 
 export const InputFieldStyled = styled.input`
     box-sizing: border-box;
@@ -15,6 +15,7 @@ export const InputFieldStyled = styled.input`
     font-weight: ${FontWeight.Light};
     color: ${Color.Black};
     font-size: ${FontSize.Small};
+    padding: 0 ${Spacing.Small};
 
     ::placeholder{
         font-weight: ${FontWeight.Light};
