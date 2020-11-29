@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { Color, Spacing } from '../constants'
 
-const menuContainerZIndex = '1';
-const menuOverlayZIndex = '0';
+const menuContainerZIndex = '2';
+const menuOverlayZIndex = '1';
 
 export const NavContainer = styled.div`
     width: 80%;
