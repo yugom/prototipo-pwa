@@ -8,7 +8,7 @@ export const SearchField = () => {
     const searchIcon = <Icon.Search size={IconSize.Medium} />;
     return (
         <SearchFieldStyled>
-            <FieldButton children={searchIcon} placeholder={'Escreva aqui'} />
+            <FieldButton name={'search'} children={searchIcon} placeholder={'Escreva aqui'} />
         </SearchFieldStyled>
     );
 }

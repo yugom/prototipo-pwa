@@ -11,6 +11,7 @@ export const Button = (props) => {
             expanded={props.expanded}
             outline={props.outline}
             flatBorder={props.flatBorder}
+            type={props.submit ? 'submit' : 'button'}
         >
             <ButtonContent loading={props.loading}>
                 {props.children}
