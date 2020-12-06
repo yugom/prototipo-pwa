@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Color, Spacing} from '../constants'
+import { Color, Spacing } from '../constants'
 
 const menuContainerZIndex = '1';
 const menuOverlayZIndex = '0';

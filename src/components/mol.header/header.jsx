@@ -16,21 +16,17 @@ export const Header = (props) => {
         <>
             <HeaderStyled height={'medium'}>
                 <HBox grow={true}>
-                    <HBox grow={true} hAlign={'flexStart'}>
-                        <HBox.Item onClick={openMenu}>
-                            <Icon.Menu size={IconSize.Large} />
-                        </HBox.Item>
-                    </HBox>
-                    <HBox.Item halign={'center'}>
+                    <HBox.Item grow={true} onClick={openMenu} hAlign={'flexStart'}>
+                        <Icon.Menu size={IconSize.Large} />
+                    </HBox.Item>
+                    <HBox.Item>
                         <AppIcon.Logo />
                     </HBox.Item>
-                    <HBox grow={true} hAlign={'flexEnd'}>
-                        <HBox.Item>
-                            <Icon.Cart size={IconSize.Large} />
-                            <HBox.Separator />
-                            <Icon.Cart size={IconSize.Large} />
-                        </HBox.Item>
-                    </HBox>
+                    <HBox.Item grow={true} hAlign={'flexEnd'}>
+                        <Icon.Cart size={IconSize.Large} />
+                        <HBox.Separator />
+                        <Icon.Cart size={IconSize.Large} />
+                    </HBox.Item>
                 </HBox>
             </HeaderStyled>
             <Menu opened={toggleMenu} handleClick={openMenu} />
@@ -47,7 +43,7 @@ export const HeaderNav = props => {
                 </HBox.Item>
                 <HBox.Separator />
                 <HBox.Item grow={true} hAlign={'flexStart'}>
-                    <H1 color={'white'}>Olá, {props.children}</H1>
+                    <H1 light={true}>Olá, {props.children}</H1>
                 </HBox.Item>
                 <HBox.Item onClick={props.handleCloseClick}>
                     <Icon.Close size={IconSize.Large} />

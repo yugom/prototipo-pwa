@@ -24,7 +24,7 @@ export const Routes = () => {
         <Router>
             <Header />
             <Switch>
-                <PrivateRoute exact path="/" component={Home} />
+                {/* <PrivateRoute exact path="/home" component={Home} /> */}
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
                 <Route path='/login' component={Login} />
