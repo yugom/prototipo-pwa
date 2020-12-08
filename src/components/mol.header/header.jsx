@@ -23,7 +23,7 @@ export const Header = (props) => {
                         <AppIcon.Logo />
                     </HBox.Item>
                     <HBox.Item grow={true} hAlign={'flexEnd'}>
-                        <Icon.Cart size={IconSize.Large} />
+                        <Icon.Account size={IconSize.Large} />
                         <HBox.Separator />
                         <Icon.Cart size={IconSize.Large} />
                     </HBox.Item>

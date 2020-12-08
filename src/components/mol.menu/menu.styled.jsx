@@ -29,8 +29,6 @@ export const Overlay = styled.div`
 `
 
 export const NavListContainer = styled.div`
-    margin-top: ${Spacing.Small};
-    margin-left: ${Spacing.Medium};
-
+    margin: ${Spacing.Small} ${Spacing.Medium};
 `
 

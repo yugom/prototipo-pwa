@@ -22,6 +22,7 @@ export const FontSize = {
 export const Color = {
     Primary: '#0595A6',
     Secondary: '#EC8213',
+    Accessory: '#003383',
     White: '#fff',
     Black: '#000',
     GrayXLight: '#F5F5F5',
