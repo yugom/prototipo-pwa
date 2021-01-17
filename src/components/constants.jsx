@@ -1,12 +1,12 @@
 export const FontFamily = {
-    Primary: 'Open Sans, Helvetica, Arial, sans-serif'
+    Primary: 'Nunito, Helvetica, Arial, sans-serif'
 }
 
 export const FontWeight = {
     Normal: 'normal',
     Bold: 'bold',
     Medium: 600,
-    Light: 400,
+    Light: 500,
     XLight: 300
 }
 
@@ -46,6 +46,8 @@ export const Border = {
     Thickness: '1px',
     Type: 'solid'
 }
+
+export const ExternalGutter = '16px';
 
 export const ButtonHeight = {
     Medium: '48px',

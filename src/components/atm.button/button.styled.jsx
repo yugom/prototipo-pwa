@@ -9,24 +9,41 @@ const buttonColor = {
 export const ButtonStyled = styled.button`
     position: relative;
     width: ${props => props.expanded ? `100%` : `auto`};
-    padding: 0 ${Spacing.Medium};
     height: ${ButtonHeight.Medium};
+    ${props => props.buttonKind === 'link' ? LinkSpecificStyle(props) : ButtonSpecificStyle(props)
+    }
+`;
+
+const LinkSpecificStyle = (props) => `
+    font-size: ${FontSize.XSmall};
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    color: ${Color.Primary};
+    font-family: ${FontFamily.Primary};
+    font-size: ${FontSize.Small};
+`
+
+const ButtonSpecificStyle = (props) => `
+    font-size: ${FontSize.Small};
+    padding: 0 ${Spacing.Medium};
+    background-color: ${props.outline ? 'transparent' : props.buttonKind ? buttonColor[props.buttonKind] : buttonColor.primary};
     border-radius: ${Border.Radius};
-    border-top-left-radius: ${props => props.flatBorder ? '0' : Border.Radius};
-    border-bottom-left-radius: ${props => props.flatBorder ? '0' : Border.Radius};
-    border: ${Border.Thickness} ${Border.Type} ${props => props.outline ? buttonColor[props.buttonKind] : 'transparent'};
-    color: ${props => props.outline ? buttonColor[props.buttonKind] : Color.White};
-    background-color: ${props => props.outline ? 'transparent' : props.buttonKind ? buttonColor[props.buttonKind] : buttonColor.primary};
+    border-top-left-radius: ${props.flatBorder ? '0' : Border.Radius};
+    border-bottom-left-radius: ${props.flatBorder ? '0' : Border.Radius};
+    border: ${Border.Thickness} ${Border.Type} ${props.outline ? buttonColor[props.buttonKind] : 'transparent'};
+    color: ${props.outline ? buttonColor[props.buttonKind] : Color.White};
     opacity: ${props => props.disabled ? 0.5 : 1};
     display: flex;
     justify-content: center;
     align-items: center;
-`;
+`
+
+
 
 export const ButtonContent = styled.div`
     font-family: ${FontFamily.Primary};
-    font-size: ${FontSize.Small};
-    font-weight: ${FontWeight.Bold};
+    font-weight: ${FontWeight.Medium};
     opacity: ${props => props.loading ? 0 : 1};
 `;
 
