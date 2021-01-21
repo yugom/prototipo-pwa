@@ -10,6 +10,15 @@ import { H1 } from '../atm.typography/typography.styled';
 
 export const Menu = props => {
     const [menuItems, setMenuItems] = useState([]);
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        setUser({
+            name: 'Douglas',
+            email: 'pedro@cobasi.com.br'
+        })
+    }, [])
+
     useEffect(() => {
         setMenuItems([
             {
@@ -72,7 +81,6 @@ export const Menu = props => {
                     </H2>
                 }
                 <>
-                    {/* {console.log(item.items.map(menu => menu.title))} */}
                     {item.items.map(menuLinkItem =>
                         <Link to={menuLinkItem.path} key={menuLinkItem.key} style={{ textDecoration: 'none' }}>
                             <HBox.Item hAlign={'flexStart'} >
@@ -95,7 +103,7 @@ export const Menu = props => {
                         </HBox.Item>
                         <HBox.Separator />
                         <HBox.Item grow={true} hAlign={'flexStart'}>
-                            <H1 light={true}>Olá, Pedro</H1>
+                            <H1 light={true}>Olá, {user.name}</H1>
                         </HBox.Item>
                         <HBox.Item onClick={props.handleClick}>
                             <Icon.Close size={IconSize.Large} />

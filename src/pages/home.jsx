@@ -17,7 +17,7 @@ export const Home = () => {
         <div>
             <SearchField />
             <H1>Home</H1>
-            <FieldButton name={'email-marketing'} children={'Cadastrar'} placeholder={'Escreva aqui'} kind={'secondary'} handleSubmit={handleSubmit} handleInputChange={handleInputChange} />
+            <FieldButton name={'email-marketing'} children={'Cadastrar'} placeholder={'Escreva aqui'} kind={'secondary'} onSubmit={handleSubmit} onInputChange={handleInputChange} />
         </div>
     );
 }
