@@ -19,5 +19,13 @@ export const H3 = styled.h3`
     color: ${props => FontColor[props.color] ?? Color.Black};
     font-family: ${FontFamily.Primary};
     font-weight: ${FontWeight.Medium};
-    margin: ${Spacing.Small} 0;
+    margin-top: ${Spacing.Small};
+    margin-bottom: ${Spacing.Small};
+`
+
+export const InputLabel = styled.label`
+    display: block;
+    font-size: ${FontSize.XSmall};
+    font-weight: ${FontWeight.Light};
+    color: ${Color.Black};
 `

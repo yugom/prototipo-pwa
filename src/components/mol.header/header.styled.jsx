@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {HeaderHeight, Color, Spacing} from '../constants'
+import { HeaderHeight, Color, Spacing } from '../constants'
 
 const HeaderSize = {
     large: HeaderHeight.Large,
