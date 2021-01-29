@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Color } from '../constants'
+import { Color, Spacing } from '../constants'
 
 const menuContainerZIndex = '1';
 const menuOverlayZIndex = '0';
@@ -26,5 +26,11 @@ export const Overlay = styled.div`
     transition: all .4s ease-in-out;
     background-color: ${Color.Black};
     opacity: 50%;
+`
+
+export const NavListContainer = styled.div`
+    margin-top: ${Spacing.Small};
+    margin-left: ${Spacing.Medium};
+
 `
 

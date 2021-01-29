@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Spacing} from '../constants'
+import { Spacing } from '../constants'
 
 const HAlign = {
     flexStart: 'flex-start',
@@ -25,7 +25,6 @@ export const HBox = styled.div`
     justify-content: ${props => HAlign[props.hAlign] ?? 'center'};
     align-items: ${props => VAlign[props.vAlign] ?? 'center'};
     height: 100%;
-    width: ${props => props.grow ? '100%' : 'auto'};
 `;
 
 HBox.Item = styled.div`
@@ -33,7 +32,7 @@ HBox.Item = styled.div`
     flex-direction: row;
     justify-content: ${props => HAlign[props.hAlign] ?? 'center'};
     align-items: ${props => VAlign[props.vAlign] ?? 'center'};
-    flex: ${props => props.grow ? '1': '0'};
+    flex: ${props => props.grow ? '1' : '0'};
     height: 100%;
 `
 
