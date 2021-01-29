@@ -14,13 +14,22 @@ export const H1 = styled.h1`
     font-weight: ${FontWeight.Bold};
 `
 
+export const H2 = styled.h2`
+    font-size: ${FontSize.Medium};
+    color: ${Color.Accessory};
+    font-family: ${FontFamily.Primary};
+    font-weight: ${FontWeight.Medium};
+    margin-top: ${Spacing.Medium};
+    margin-bottom: ${Spacing.Small};
+`
+
 export const H3 = styled.h3`
     font-size: ${FontSize.Small};
     color: ${props => FontColor[props.color] ?? Color.Black};
     font-family: ${FontFamily.Primary};
     font-weight: ${FontWeight.Medium};
-    margin-top: ${Spacing.Small};
-    margin-bottom: ${Spacing.Small};
+    margin-top: ${Spacing.Medium};
+    margin-bottom: ${Spacing.Medium};
 `
 
 export const InputLabel = styled.label`

@@ -16,7 +16,7 @@ export const SearchField = () => {
     const searchIcon = <Icon.Search size={IconSize.Medium} />;
     return (
         <SearchFieldStyled>
-            <FieldButton name={'search'} children={searchIcon} placeholder={'Escreva aqui'} kind={'secondary'} handleSubmit={handleSubmit} handleInputChange={handleInputChange} />
+            <FieldButton name={'search'} children={searchIcon} placeholder={'Escreva aqui'} kind={'secondary'} onSubmit={handleSubmit} onInputChange={handleInputChange} />
         </SearchFieldStyled>
     );
 }
