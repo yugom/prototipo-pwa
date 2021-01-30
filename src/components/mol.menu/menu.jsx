@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { Icon } from '../atm.icon/icon';
 import { IconSize } from '../constants';
 import { H1 } from '../atm.typography/typography.styled';
+import { Avatar } from '../atm.avatar/avatar';
 
 export const Menu = props => {
     const [menuItems, setMenuItems] = useState([]);
@@ -15,11 +16,10 @@ export const Menu = props => {
     useEffect(() => {
         setUser({
             name: 'Douglas',
-            email: 'pedro@cobasi.com.br'
+            email: 'pedro@cobasi.com.br',
+            image: 'https://avatars.githubusercontent.com/u/5383178?s=60&v=4'
         })
-    }, [])
 
-    useEffect(() => {
         setMenuItems([
             {
                 section: '',
@@ -99,7 +99,7 @@ export const Menu = props => {
                 <NavHeader>
                     <HBox grow={true}>
                         <HBox.Item>
-                            <Icon.Profile size={IconSize.XLarge} />
+                            <Avatar image={user.image} alt={user.name} />
                         </HBox.Item>
                         <HBox.Separator />
                         <HBox.Item grow={true} hAlign={'flexStart'}>
