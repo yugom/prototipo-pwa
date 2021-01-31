@@ -29,8 +29,6 @@ const ButtonSpecificStyle = (props) => `
     padding: 0 ${Spacing.Medium};
     background-color: ${props.outline ? 'transparent' : props.buttonKind ? buttonColor[props.buttonKind] : buttonColor.primary};
     border-radius: ${Border.Radius};
-    border-top-left-radius: ${props.flatBorder ? '0' : Border.Radius};
-    border-bottom-left-radius: ${props.flatBorder ? '0' : Border.Radius};
     border: ${Border.Thickness} ${Border.Type} ${props.outline ? buttonColor[props.buttonKind] : 'transparent'};
     color: ${props.outline ? buttonColor[props.buttonKind] : Color.White};
     opacity: ${props => props.disabled ? 0.5 : 1};

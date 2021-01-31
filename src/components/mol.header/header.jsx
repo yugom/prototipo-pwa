@@ -28,7 +28,7 @@ export const Header = (props) => {
                     </HBox.Item>
                 </HBox>
             </HeaderStyled>
-            <Menu opened={toggleMenu} handleClick={openMenu} />
+            <Menu auth={props.auth} opened={toggleMenu} onClose={openMenu} />
         </>
     );
 }
