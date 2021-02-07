@@ -7,7 +7,7 @@ export const Login = (props) => {
 
     const handleClick = () => {
         localStorage.setItem('token', 'logado')
-        return history.replace('/')
+        return history.push('/')
     }
 
     return (

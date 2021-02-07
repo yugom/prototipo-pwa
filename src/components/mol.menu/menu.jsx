@@ -69,7 +69,8 @@ export const Menu = props => {
     }
 
     const handleHeaderClick = () => {
-        alert('header clicked');
+        props.funcToLogin?.();
+        props.onClose?.();
     }
 
     return (
