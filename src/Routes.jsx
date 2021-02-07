@@ -23,7 +23,7 @@ export const Routes = () => {
     const [auth, setAuth] = useState();
 
     useEffect(() => {
-        setAuth(false)
+        setAuth(true)
     }, [])
 
     return (

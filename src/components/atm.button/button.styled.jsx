@@ -21,7 +21,6 @@ const LinkSpecificStyle = (props) => `
     border-color: transparent;
     color: ${Color.Primary};
     font-family: ${FontFamily.Primary};
-    font-size: ${FontSize.Small};
 `
 
 const ButtonSpecificStyle = (props) => `
