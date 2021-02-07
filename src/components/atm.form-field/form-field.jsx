@@ -9,7 +9,7 @@ export const FormField = (props) => {
                 props.label &&
                 <InputLabel>{props.label}</InputLabel>
             }
-            <InputFieldStyled placeholder={props.placeholder} flatBorder={props.flatBorder} onChange={props.onInputChange} name={props.name} />
+            <InputFieldStyled placeholder={props.placeholder} onChange={props.onInputChange} name={props.name} />
         </>
 
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import { Home } from './pages/home'
 import { About } from './pages/about'
@@ -20,9 +20,15 @@ export const PrivateRoute = ({ component: Component, ...rest }) => (
 )
 
 export const Routes = () => {
+    const [auth, setAuth] = useState();
+
+    useEffect(() => {
+        setAuth(false)
+    }, [])
+
     return (
         <Router>
-            <Header />
+            <Header auth={auth} />
             <Switch>
                 {/* <PrivateRoute exact path="/home" component={Home} /> */}
                 <Route exact path='/' component={Home} />

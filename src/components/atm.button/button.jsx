@@ -10,7 +10,6 @@ export const Button = (props) => {
             disabled={props.disabled}
             expanded={props.expanded}
             outline={props.outline}
-            flatBorder={props.flatBorder}
             type={props.submit ? 'submit' : 'button'}
         >
             <ButtonContent loading={props.loading}>

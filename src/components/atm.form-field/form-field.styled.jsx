@@ -6,8 +6,6 @@ export const InputFieldStyled = styled.input`
     width: 100%;
     height: ${FieldHeight};
     border-radius: ${Border.Radius};
-    border-top-right-radius: ${props => props.flatBorder ? '0' : Border.Radius};
-    border-bottom-right-radius: ${props => props.flatBorder ? '0' : Border.Radius};
     border-style: ${Border.Type};
     border-right-style: ${props => props.flatBorder ? 'none' : Border.Type};
     border-width: ${Border.Thickness};
